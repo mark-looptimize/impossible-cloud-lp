@@ -12,8 +12,8 @@
   <section id="hero-section"></section>
   <section id="compliance"></section>
   <section id="features"></section>
-  <section id="web-3"></section>
-  <section id="europe"></section>
+  <section id="key-focus"></section>
+  <section id="geofencing"></section>
   <section id="pricing"></section>
   <section id="soft-cta"></section>
   <section id="product-integrations"></section>
@@ -34,19 +34,34 @@
     
   <script type="module">
     import * as litHtml from "lit-html";
-    import "../partials/hero-innovation.js";
-    import "../partials/features.js";
-    import "../partials/advantages.js";
-    import "../partials/sales-email.js";
-    import "../partials/faq.js";
-    import "../partials/compliance.js";
-    import "../partials/alt-usecase.js";
-    import "../partials/trial-cta.js";
-    import "../partials/web3.js";
-    import "../partials/product-integrations.js";
-    import "../partials/soft-cta.js";
-    import "../partials/pricing.js";
-    import "../partials/european.js";
+    import { pageConfiguration } from './configuration.js';
+    import { renderHero } from "../partials/hero.js";
+    import { renderFeatures } from "../partials/features.js";
+    import { renderAdvantages } from "../partials/advantages.js";
+    import { renderSalesEmail } from "../partials/sales-email.js";
+    import { renderFaq } from "../partials/faq.js";
+    import { renderCompliance } from "../partials/compliance.js";
+    import { renderUseCases } from "../partials/usecases.js";
+    import { renderTrialCta } from "../partials/trial-cta.js";
+    import { renderKeyFocus } from "../partials/key-focus.js";
+    import { renderIntegrations } from "../partials/product-integrations.js";
+    import { renderSoftCta } from "../partials/soft-cta.js";
+    import { renderPricing } from "../partials/pricing.js";
+    import { renderGeofencing } from "../partials/geofencing.js";
+
+    renderHero(pageConfiguration.heroConfig, 'hero-section');
+    renderAdvantages(pageConfiguration.advantagesConfig, 'advantages');
+    renderSalesEmail(pageConfiguration.salesEmailConfig, 'sales-cta');
+    renderFaq(pageConfiguration.faqConfig, 'faq');
+    renderUseCases(pageConfiguration.useCaseConfig, 'use-cases');
+    renderCompliance(pageConfiguration.complianceConfig, 'compliance');
+    renderTrialCta(pageConfiguration.trialCtaConfig, 'trial-cta');
+    renderFeatures(pageConfiguration.featuresConfig, 'features');
+    renderIntegrations(pageConfiguration.integrationConfig, 'product-integrations');
+    renderSoftCta(pageConfiguration.softCtaConfig, 'soft-cta');
+    renderPricing(pageConfiguration.pricingConfig, 'pricing');
+    renderGeofencing(pageConfiguration.geofencingConfig, 'geofencing');
+    renderKeyFocus(pageConfiguration.keyFocusConfig, 'key-focus');
   </script>
   <style>
     #compliance {

@@ -1,36 +1,37 @@
 import {html, render} from 'lit-html';
-const sectionIdentifier = 'advantages';
+// const sectionIdentifier = 'advantages';
 
-const configuration = {
-  headline: 'Why switch to Impossible Cloud?',
-  leadText: 'We know that changing cloud providers can be challenging at the best of times, which is precisely why we have gone out of our way to make the entire process as simple a decision for you as possible.',
-  feature1: {
-    headline: 'Always available',
-    text: 'Your data is available anywhere and always.'
-  },
-  feature2: {
-    headline: 'Low latency',
-    text: 'Located at your edge for unparalleled performance.'
-  },
-  feature3: {
-    headline: 'Privacy Guaranteed',
-    text: 'Only you have access to your data.'
-  },
-  feature4: {
-    headline: 'Decentralized Architecture',
-    text: 'Decentralized architecture eliminates the single point of failure.'
-  },
-  feature5: {
-    headline: 'S3 API Compatability',
-    text: 'Easy to use and easy to switch with full S3 API compatibility.'
-  },
-  feature6: {
-    headline: 'Security & Resilience',
-    text: 'Industry-leading security with built-in resilience and immutability.'
-  },
-};
+// const configuration = {
+//   headline: 'Why switch to Impossible Cloud?',
+//   leadText: 'We know that changing cloud providers can be challenging at the best of times, which is precisely why we have gone out of our way to make the entire process as simple a decision for you as possible.',
+//   feature1: {
+//     headline: 'Always available',
+//     text: 'Your data is available anywhere and always.'
+//   },
+//   feature2: {
+//     headline: 'Low latency',
+//     text: 'Located at your edge for unparalleled performance.'
+//   },
+//   feature3: {
+//     headline: 'Privacy Guaranteed',
+//     text: 'Only you have access to your data.'
+//   },
+//   feature4: {
+//     headline: 'Decentralized Architecture',
+//     text: 'Decentralized architecture eliminates the single point of failure.'
+//   },
+//   feature5: {
+//     headline: 'S3 API Compatability',
+//     text: 'Easy to use and easy to switch with full S3 API compatibility.'
+//   },
+//   feature6: {
+//     headline: 'Security & Resilience',
+//     text: 'Industry-leading security with built-in resilience and immutability.'
+//   },
+// };
 
-const template = html`
+export function renderAdvantages(configuration, sectionIdentifier) {
+  const template = html`
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
@@ -130,3 +131,5 @@ const template = html`
 `;
 
 render(template, document.getElementById(sectionIdentifier));
+}
+
