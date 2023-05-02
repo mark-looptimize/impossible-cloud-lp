@@ -3,7 +3,7 @@ const sectionIdentifier = 'hero-section';
 
 const configuration = {
   headline: 'Next generation cloud object storage',
-  text: "Switch to the first decentralized, enterprise-grade cloud for fast, outage-proof, Kubernetes-friendly, S3-compatible object storage and 50-75% cost savings.",
+  text: "Experience the power of decentralized, enterprise-grade cloud storage with ImpossibleCloud's next-gen Amazon S3 compatible object storage solution.",
   microcopy1: 'Full S3 Compatability',
   microcopy2: 'At a fraction of the cost',
   button1: 'Start a free 30 day trial',
