@@ -159,7 +159,7 @@ export const pageConfiguration = {
   },
   heroConfig: {
     headline: 'Amazon S3 compatible object storage at half the price',
-    text: html`<ul><li class="flex gap-x-3"> ${tick} 50-75% savings compared to hyperscalers like AWS</li><li class="flex gap-x-3"> ${tick} Full S3 API compatability</li><li class="flex gap-x-3"> ${tick} Get started with just 1 line of code</li></ul>`,
+    text: html`<ul><li class="flex gap-x-3"> ${tick} 50-75% savings compared to hyperscalers like AWS</li><li class="flex gap-x-3"> ${tick} Full S3 API compatibility</li><li class="flex gap-x-3"> ${tick} Get started with just 1 line of code</li></ul>`,
     microcopy1: '',
     microcopy2: '50-75% savings compared to hyperscalers like AWS',
     button1: 'Start a free 30 day trial',
