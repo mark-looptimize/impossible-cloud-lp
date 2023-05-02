@@ -1,3 +1,7 @@
+import {html} from 'lit-html';
+
+const tick = html`<svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>`;
+
 export const pageConfiguration = {
   advantagesConfig: {
     headline: 'Why switch to Impossible Cloud?',
@@ -154,9 +158,9 @@ export const pageConfiguration = {
     },
   },
   heroConfig: {
-    headline: 'Cloud object storage at an affordable price',
-    text: "Full control over your budget. Our price model is fully transparent and predictable. No more unpleasant surprises at the end of the month.",
-    microcopy1: 'Full S3 compatability',
+    headline: 'Amazon S3 compatable object storage at half the price',
+    text: html`<ul><li class="flex gap-x-3"> ${tick} 50-75% savings compared to hyperscalers like AWS</li><li class="flex gap-x-3"> ${tick} Full S3 API compatability</li><li class="flex gap-x-3"> ${tick} Get started with just 1 line of code</li></ul>`,
+    microcopy1: '',
     microcopy2: '50-75% savings compared to hyperscalers like AWS',
     button1: 'Start a free 30 day trial',
   },
@@ -179,3 +183,4 @@ export const pageConfiguration = {
     },
   }
 };
+

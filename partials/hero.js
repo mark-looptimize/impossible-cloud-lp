@@ -9,7 +9,7 @@ export function renderHero(configuration, sectionIdentifier) {
           <div class="mx-auto max-w-2xl">
             <div class="max-w-lg">
               <img class="h-11" src="../assets/impossible-cloud-logo.png" alt="Impossible Cloud">
-              <div class="mt-24 sm:mt-32 lg:mt-16">
+              <div class="mt-24 sm:mt-32 lg:mt-16" id="hero-pills">
                 <a href="#" class="inline-flex space-x-6">
                   <span class="rounded-full bg-green-600/10 px-3 py-1 text-sm font-semibold leading-6 text-green-600 ring-1 ring-inset ring-green-600/10">${configuration.microcopy1}</span>
                   <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
