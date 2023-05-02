@@ -1,12 +1,13 @@
 import {html, render} from 'lit-html';
 
 const configSettings = {
-    q1: 'How does pricing work?',
-    q2: 'What are the rules for naming buckets?',
-    q3: 'What are the rules for setting a password?',
-    q4: 'How does Impossible Cloud handle tax collection?',
-    q5: 'How do I find out when Impossible Cloud performs service maintenance?',
-    answerText: 'Praesent sed tellus lacus. Aenean consequat dolor ac purus ornare rhoncus rutrum et dolor. In cursus viverra quam, ut consequat dui dignissim et. Curabitur nec ultricies leo. Mauris finibus, massa eu sodales ultrices, lorem nulla pellentesque dolor, blandit congue tortor orci id quam. Nullam varius tellus tortor. Nulla pretium auctor fringilla. Donec tincidunt orci in tellus luctus, sed dictum massa congue. Etiam euismod ipsum eget sollicitudin iaculis. Duis metus eros, dictum sed dignissim sed, consectetur a risus. Nulla viverra dolor imperdiet ornare sagittis. Proin vitae iaculis nunc, hendrerit venenatis velit.'
+    q1: 'What is Object Storage?',
+    q2: 'How does Object Storage Work?',
+    q3: 'Who is eligible for the free trial?',
+    q4: 'What are the limitations of the trial?',
+    q5: 'What\'s the maximum size for an object?',
+    q6: 'What SLA does Impossible Cloud offer for Storage Services?',
+    answerText: 'Object storage is a way of storing data as individual units, called objects, rather than as a hierarchy of files and folders. It offers scalability, durability, and cost-effectiveness, making it a popular choice for storing large amounts of unstructured data such as images, videos, and documents.'
 };
 
 const template = html`
@@ -42,7 +43,7 @@ const template = html`
           </dt>
           <dd class="mt-2 pr-12" id="faq-0">
             <p class="text-base leading-7 text-gray-600">
-                Praesent sed tellus lacus. Aenean consequat dolor ac purus ornare rhoncus rutrum et dolor. In cursus viverra quam, ut consequat dui dignissim et. Curabitur nec ultricies leo. Mauris finibus, massa eu sodales ultrices, lorem nulla pellentesque dolor, blandit congue tortor orci id quam. Nullam varius tellus tortor. Nulla pretium auctor fringilla. Donec tincidunt orci in tellus luctus, sed dictum massa congue. Etiam euismod ipsum eget sollicitudin iaculis. Duis metus eros, dictum sed dignissim sed, consectetur a risus. Nulla viverra dolor imperdiet ornare sagittis. Proin vitae iaculis nunc, hendrerit venenatis velit.
+              ${configSettings.answerText}
             </p>
           </dd>
         </div>
@@ -145,6 +146,37 @@ const template = html`
             <!-- Expand/collapse question button -->
             <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
               <span class="text-base font-semibold leading-7">${configSettings.q5}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">
+            </p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">${configSettings.q6}</span>
               <span class="ml-6 flex h-7 items-center">
                 <!--
                   Icon when question is collapsed.

@@ -7,7 +7,7 @@ const configuration = {
   leadText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.',
   useCase1: {
     headline: 'Backup and disaster recovery',
-    text: 'Safer than a military bunker. ImpossibleCloud offers first class disaster recovery systems for those times when things just don\'t go as expected.  Our decentralized, outage-proof environment helps ensure that you\'ll never lose an important file again.'
+    text: 'Safer than a military bunker. Impossible Cloud offers first class disaster recovery systems for those times when things just don\'t go as expected.  Our decentralized, outage-proof environment helps ensure that you\'ll never lose an important file again.'
   },
   useCase2: {
     headline: 'Sensitive data storage',
@@ -15,7 +15,7 @@ const configuration = {
   },
   useCase3: {
     headline: 'Ransomware protection',
-    text: 'We built ImpossibleCloud from the ground up to ensure that your data stays immutable and decentralized to help mitigate against the fastest growing threats in the modern cyber landscape.'
+    text: 'We built Impossible Cloud from the ground up to ensure that your data stays immutable and decentralized to help mitigate against the fastest growing threats in the modern cyber landscape.'
   },
   useCase4: {
     headline: 'Application data',

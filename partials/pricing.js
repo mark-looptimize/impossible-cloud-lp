@@ -4,6 +4,7 @@ const sectionIdentifier = 'pricing';
 const configuration = {
   headline: 'Simple no-tricks pricing',
   leadText: 'Your business may be unpredictable, but your data costs shouldn\'t be. Avoid billing surprises and benefit from our transparent pricing structure.',
+  boxText: 'We all hate hidden fees. Impossible Cloud makes costs predictable. Get easy, scalable and reliable cloud storage at a fair price.',
   price: '$7.99',
   timePeriod: 'per month',
   dataUnit: 'Storage per TB',
@@ -26,9 +27,9 @@ const template = html`
     <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div class="p-8 sm:p-10 lg:flex-auto">
         <h3 class="text-2xl font-bold tracking-tight text-gray-900">${configuration.subHeadline}</h3>
-        <p class="mt-6 text-base leading-7 text-gray-600">Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
+        <p class="mt-6 text-base leading-7 text-gray-600">${configuration.boxText}</p>
         <div class="mt-10 flex items-center gap-x-4">
-          <h4 class="flex-none text-sm font-semibold leading-6 text-green-600">What’s included</h4>
+          <h4 class="flex-none text-sm font-semibold leading-6 text-green-600">What's included</h4>
           <div class="h-px flex-auto bg-gray-100"></div>
         </div>
         <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">

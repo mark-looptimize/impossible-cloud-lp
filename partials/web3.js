@@ -5,7 +5,7 @@ const configuration = {
   pillText: 'Next generation cloud native architecture',
   headline: 'Meet the future of cloud object storage',
   imagePath: "../assets/data-center-big.jpg",
-  leadText: 'At ImpossibleCloud we have taken only the very best and most relevant ideas from Web3 to create a modern cloud environment that leaves behind many of the trade-offs that legacy providers require.',
+  leadText: 'At Impossible Cloud we have taken only the very best and most relevant ideas from Web3 to create a modern cloud environment that leaves behind many of the trade-offs that legacy providers require.',
   feature1: {
     headline: 'Fully immutable data',
     text: 'Impossible Cloud Storage is always hot, eliminating the need for tiering files. Ideal for your high performance applications.'

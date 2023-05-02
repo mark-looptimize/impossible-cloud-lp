@@ -15,8 +15,8 @@ const configuration = {
     text: 'Impossible Cloud Storage is designed for 100% file durability and offers effective ransomware protection with object lock.'
   },
   feature3: {
-    headline: 'Enterprise-grade compliance',
-    text: 'All file operations are in top-tier data centers. Highly secure, fully redundant, and certified, including SOC 2 and ISO 27001.'
+    headline: 'Outage proof and secure',
+    text: 'Impossible Cloud Storage is decentralized to minimize the risk of a single point of failure. Identity and Access Management, triple file encryption, immutable buckets, and object lock ensure industry-leading cloud storage security.'
   },
   feature4: {
     headline: 'Easy to switch with one line of code',

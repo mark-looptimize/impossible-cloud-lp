@@ -2,8 +2,8 @@ import {html, render} from 'lit-html';
 const sectionIdentifier = 'advantages';
 
 const configuration = {
-  headline: 'Why switch to ImpossibleCloud?',
-  leadText: 'Impossible Cloud Storage is ideal for organizations that require storage for big data, backups and archives. Our decentralized, enterprise-grade, native cloud storage solution offers all the benefits of big tech providers at a fraction of the cost.',
+  headline: 'Why switch to Impossible Cloud?',
+  leadText: 'We know that changing cloud providers can be challenging at the best of times, which is precisely why we have gone out of our way to make the entire process as simple a decision for you as possible.',
   feature1: {
     headline: 'Always available',
     text: 'Your data is available anywhere and always.'
