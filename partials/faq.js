@@ -1,11 +1,12 @@
 import {html, render} from 'lit-html';
-const sectionIdentifier = 'faq';
 
-const configuration = {
-  question1: 'What are the rules for naming buckets?',
-  question2: 'How does pricing work?',
-  question3: 'What are the rules for setting a password?',
-  question4: 'How do I find out when Impossible Cloud performs service maintenance?',
+const configSettings = {
+    q1: 'How does pricing work?',
+    q2: 'What are the rules for naming buckets?',
+    q3: 'What are the rules for setting a password?',
+    q4: 'How does Impossible Cloud handle tax collection?',
+    q5: 'How do I find out when Impossible Cloud performs service maintenance?',
+    answerText: 'Praesent sed tellus lacus. Aenean consequat dolor ac purus ornare rhoncus rutrum et dolor. In cursus viverra quam, ut consequat dui dignissim et. Curabitur nec ultricies leo. Mauris finibus, massa eu sodales ultrices, lorem nulla pellentesque dolor, blandit congue tortor orci id quam. Nullam varius tellus tortor. Nulla pretium auctor fringilla. Donec tincidunt orci in tellus luctus, sed dictum massa congue. Etiam euismod ipsum eget sollicitudin iaculis. Duis metus eros, dictum sed dignissim sed, consectetur a risus. Nulla viverra dolor imperdiet ornare sagittis. Proin vitae iaculis nunc, hendrerit venenatis velit.'
 };
 
 const template = html`
@@ -18,8 +19,16 @@ const template = html`
           <dt>
             <!-- Expand/collapse question button -->
             <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">How does Impossible Cloud handle tax collection?</span>
+              <span class="text-base font-semibold leading-7">${configSettings.q1}</span>
               <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
                 <!--
                   Icon when question is expanded.
 
@@ -33,87 +42,142 @@ const template = html`
           </dt>
           <dd class="mt-2 pr-12" id="faq-0">
             <p class="text-base leading-7 text-gray-600">
-            Impossible Cloud is provided by <strong>Impossible Cloud GmbH</strong>.
-            </p>
-            <p class="text-base leading-7 text-gray-600 mt-3">
-            If you are a customer in the United States, Impossible Cloud GmbH collects sales tax following your <b>local state regulations</b>.
-            </p>
-            <p class="text-base leading-7 text-gray-600 mt-3">
-            If you are a customer outside the United States, Impossible Cloud GmbH collects VAT following your <b>local country's regulations</b>. Impossible Cloud GmbH determines your home state or country based on the home state or country associated with your payment method.
+                Praesent sed tellus lacus. Aenean consequat dolor ac purus ornare rhoncus rutrum et dolor. In cursus viverra quam, ut consequat dui dignissim et. Curabitur nec ultricies leo. Mauris finibus, massa eu sodales ultrices, lorem nulla pellentesque dolor, blandit congue tortor orci id quam. Nullam varius tellus tortor. Nulla pretium auctor fringilla. Donec tincidunt orci in tellus luctus, sed dictum massa congue. Etiam euismod ipsum eget sollicitudin iaculis. Duis metus eros, dictum sed dignissim sed, consectetur a risus. Nulla viverra dolor imperdiet ornare sagittis. Proin vitae iaculis nunc, hendrerit venenatis velit.
             </p>
           </dd>
-          <dt>
-            <!-- Expand/collapse question button -->
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">${configuration.question1}</span>
-              <span class="ml-6 flex h-7 items-center">
-                <!--
-                  Icon when question is collapsed.
-
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                </svg>
-              </span>
-            </button>
-          </dt>
-          <dt>
-            <!-- Expand/collapse question button -->
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">${configuration.question2}</span>
-              <span class="ml-6 flex h-7 items-center">
-                <!--
-                  Icon when question is collapsed.
-
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                </svg>
-              </span>
-            </button>
-          </dt>
-          <dt>
-            <!-- Expand/collapse question button -->
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">${configuration.question3}</span>
-              <span class="ml-6 flex h-7 items-center">
-                <!--
-                  Icon when question is collapsed.
-
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                </svg>
-              </span>
-            </button>
-          </dt>
-          <dt>
-            <!-- Expand/collapse question button -->
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-              <span class="text-base font-semibold leading-7">${configuration.question4}</span>
-              <span class="ml-6 flex h-7 items-center">
-                <!--
-                  Icon when question is collapsed.
-
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                </svg>
-              </span>
-            </button>
-          </dt>
-
         </div>
+
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">${configSettings.q2}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">
+            </p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">${configSettings.q3}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">
+        </p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">${configSettings.q4}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">
+            </p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">${configSettings.q5}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">
+            </p>
+          </dd>
+        </div>
+
 
         <!-- More questions... -->
       </dl>
     </div>
   </div>
 </div>
+
 `;
 
-render(template, document.getElementById(sectionIdentifier));
+render(template, document.getElementById('faq'));
