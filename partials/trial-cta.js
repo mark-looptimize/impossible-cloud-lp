@@ -1,28 +1,4 @@
 import {html, render} from 'lit-html';
-const sectionIdentifier = 'trial-cta';
-
-const configuration = {
-  subHeading: 'Up and running within minutes',
-  headline: 'Get started today with a risk-free trial',
-  leadText: '',
-  buttonText: '',
-  statistic1: {
-    metric: '30',
-    text: 'days'
-  },
-  statistic2: {
-    metric: '$0',
-    text: 'No credit card required'
-  },
-  statistic3: {
-    metric: '150 GB',
-    text: 'Storage limit'
-  },
-  statistic4: {
-    metric: '150 GB',
-    text: 'Data egress'
-  },
-};
 
 export function renderTrialCta(configuration, sectionIdentifier) {
   const template = html`
@@ -35,9 +11,9 @@ export function renderTrialCta(configuration, sectionIdentifier) {
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
         <h2 class="text-base font-semibold leading-8 text-green-400">${configuration.subHeading}</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">${configuration.headline}</p>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">${configuration.leadText}</p>
         <p class="mt-6">
-        <a href="#" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Get started</a>
+        <a href="#top" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Get started</a>
         </p>
       </div>
       <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">

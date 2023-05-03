@@ -17,7 +17,7 @@ export function renderSoftCta(configuration, sectionIdentifier) {
       <p class="text-sm font-semibold leading-6 text-gray-900">${configuration.supportingText}</p>
       </div>
       <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-        <a href="#" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">${configuration.buttonText}</a>
+        <a href="#top" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">${configuration.buttonText}</a>
       </div>
     </div>
   </div>

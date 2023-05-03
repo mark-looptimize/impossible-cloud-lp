@@ -1,3 +1,14 @@
+import {html} from 'lit-html';
+
+const tick = html`<svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>`;
+const heroPoints = html`
+<ul>
+  <li class="flex gap-x-3"> ${tick} Pay only for what you use at $7.99/TB per month</li>
+  <li class="flex gap-x-3"> ${tick} No hidden costs including egress and API calls</li>
+  <li class="flex gap-x-3"> ${tick} Easy integration with all the tools you already use</li>
+</ul>
+`;
+
 export const pageConfiguration = {
   advantagesConfig: {
     headline: 'Why switch to Impossible Cloud?',
@@ -43,7 +54,7 @@ export const pageConfiguration = {
   useCaseConfig: {
     subheading: 'Use cases',
     heading: 'How does cloud storage help my business?',
-    leadText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.',
+    leadText: 'Take a look at how some of our most innovative customers are already using our solution.',
     useCase1: {
       headline: 'Backup and disaster recovery',
       text: 'Safer than a military bunker. Impossible Cloud offers first class disaster recovery systems for those times when things just don\'t go as expected.  Our decentralized, outage-proof environment helps ensure that you\'ll never lose an important file again.'
@@ -72,7 +83,7 @@ export const pageConfiguration = {
   trialCtaConfig: {
     subHeading: 'Up and running within minutes',
     headline: 'Get started today with a risk-free trial',
-    leadText: '',
+    leadText: 'There is no need to take our word for it, start a trial today and discover the benefits for yourself.',
     buttonText: '',
     statistic1: {
       metric: '30',
@@ -140,13 +151,13 @@ export const pageConfiguration = {
     microcopy: 'Discounted rates available for reserved capacity plans and partners.'
   },
   geofencingConfig: {
-    pillText: 'Proudly European owned and operated',
-    headline: 'Designed to meet the needs of European organizations',
-    imagePath: "../assets/eu-flag.jpg",
-    leadText: 'Impossible Cloud provides you with the controls you need to operate your business with total confidence.',
+    pillText: 'Built to operate in a changing global environment',
+    headline: 'Designed to meet the needs of global organizations',
+    imagePath: "../assets/globe.jpg",
+    leadText: 'Global organizations are often faced with new and challenging requirements when it comes to data residency and legal requirements. Don\'t worry, we\'ve got you covered.',
     feature1: {
       headline: 'Geofencing Technology',
-      text: 'Impossible Cloud provides sophisitcated geofencing technology to help ensure that data for all of our European customers stays in European servers helping you more easily meet regulation requirements.'
+      text: 'Impossible Cloud provides sophisitcated geofencing technology to help ensure that data for all of our customers stays in servers located where they operate helping you more easily meet regulation requirements.'
     },
     feature2: {
       headline: 'Built in compliance controls',
@@ -154,28 +165,29 @@ export const pageConfiguration = {
     },
   },
   heroConfig: {
-    headline: 'Next generation cloud object storage',
-    text: "Experience the power of decentralized, enterprise-grade cloud storage with Impossible Cloud's next-gen Amazon S3 compatible object storage solution.",
-    microcopy1: 'Full S3 compatability',
+    headline: 'Amazon S3 compatible object storage for 1/10 the price',
+    text: heroPoints,
+    microcopy1: '',
     microcopy2: '50-75% savings compared to hyperscalers like AWS',
     button1: 'Start a free 30 day trial',
   },
   keyFocusConfig: {
-    pillText: 'Next generation cloud native architecture',
-    headline: 'Meet the future of cloud object storage',
-    imagePath: "../assets/data-center-big.jpg",
-    leadText: 'At Impossible Cloud we have taken only the very best and most relevant ideas from Web3 to create a modern cloud environment that leaves behind many of the trade-offs that legacy providers require.',
+    pillText: 'Storage cost comparison',
+    headline: 'Store your data in the cloud without paying a fortune',
+    imagePath: "../assets/calculator-2.png",
+    leadText: 'Impossible Cloud offers simple and transparent pricing plans including Pay-per-use and Business Plans. All plans offer 50-75% savings compared to hyperscalers.',
     feature1: {
-      headline: 'Fully immutable data',
-      text: 'Impossible Cloud Storage is always hot, eliminating the need for tiering files. Ideal for your high performance applications.'
+      headline: 'Lower total cost of ownership',
+      text: 'Get more for your money with our cost-effective cloud storage solution that delivers up to 75% lower total cost of ownership than other providers.'
     },
     feature2: {
-      headline: 'Decentralized architecture',
-      text: 'Say goodbye to single points of failure that can bring your business to a halt and say hello to the outage proof future that our innovative architecture helps provide.'
+      headline: 'Pay only for what you use',
+      text: 'Only pay for what you need with our flexible pay-per-use plan that lets you scale up or down as your business demands change.'
     },
     feature3: {
-      headline: 'Hot storage for high performance',
-      text: 'Impossible Cloud Storage is always hot, eliminating the need for tiering files. Ideal for your high performance applications.'
+      headline: 'No hidden fees',
+      text: 'Say goodbye to high egress fees and other hidden costs with our affordable and transparent pricing model that puts you in control.'
     },
   }
 };
+
